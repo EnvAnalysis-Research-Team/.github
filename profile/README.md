@@ -81,3 +81,29 @@ The system centralizes emission sources, parameters, measurement results, alerts
 - Password: `12345678`
 
 Change credentials immediately in production.
+
+## Future Enhancements
+
+### Map-Based Emission Source Visualization
+- Integrate interactive maps (Google Maps / Leaflet / Mapbox)
+- Display emission sources by geographic coordinates (latitude, longitude)
+- Show source status, monitored parameters, and latest measurement values
+- Enable filtering by source type, status, and location
+- Navigate directly from map markers to source detail pages
+
+### Measurement Approval & Audit Tracking
+- Extend measurement records with:
+  - `CreatedByUserId` (data submitter)
+  - `ApprovedByUserId` (data approver)
+  - `ApprovedAt` (approval timestamp)
+- Support approval workflow with statuses: `Pending`, `Approved`, `Rejected`
+- Improve traceability and compliance with full measurement audit history
+
+### Notification System
+- Create and persist system notifications for:
+  - Threshold violations
+  - Forecasted pollution risks
+  - Pending measurement approvals
+  - Critical administrative actions
+- Store notification metadata (recipient, type, status, timestamp)
+- Display unread notification count and history in the UI
